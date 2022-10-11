@@ -1,0 +1,6 @@
+
+org.apache.pdfbox fontbox s/jar/bundle/ s/.*/2.x/ * *
+org.sejda sambox jar s/.*/debian/ * *
+org.sejda sejda-io jar s/.*/debian/ * *
+org.bouncycastle s/bcmail-jdk15on/bcmail/ * s/.*/debian/ * *
+org.bouncycastle s/bcprov-jdk15on/bcprov/ * s/.*/debian/ * *

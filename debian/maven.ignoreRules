@@ -1,0 +1,13 @@
+
+ch.qos.logback logback-classic * * * *
+com.googlecode.java-diff-utils diffutils * * * *
+junit junit * * * *
+nl.jqno.equalsverifier equalsverifier * * * *
+org.apache.maven.plugins maven-source-plugin * * * *
+org.apache.maven.plugins maven-surefire-plugin * * * *
+org.apache.maven.plugins maven-toolchains-plugin * * * *
+org.hamcrest hamcrest-core * * * *
+org.mockito mockito-core * * * *
+com.googlecode.maven-download-plugin download-maven-plugin * * * *
+org.apache.pdfbox jbig2-imageio * * * *
+ch.qos.logback logback-core * * * *

@@ -1,0 +1,12 @@
+Information about libsambox-java
+--------------------------------
+
+This package was debianized using the mh_make command
+from the maven-debian-helper package.
+
+The build system uses Maven but prevents it from downloading
+anything from the Internet, making the build compliant with
+the Debian policy.
+
+The complete src/test directory was removed because we already ship the same
+files in libpdfbox2-java and we also don't run the tests.

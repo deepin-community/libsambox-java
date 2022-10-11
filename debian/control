@@ -1,0 +1,43 @@
+Source: libsambox-java
+Section: java
+Priority: optional
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Uploaders:
+ Markus Koschany <apo@debian.org>
+Build-Depends:
+ debhelper-compat (= 13),
+ default-jdk,
+ junit4,
+ libbcmail-java,
+ libbcprov-java,
+ libcommons-io-java,
+ libfontbox2-java,
+ libsejda-commons-java,
+ libsejda-io-java (>= 2.1.2),
+ libslf4j-java (>= 1.7.25),
+ maven-debian-helper (>= 2.1)
+Standards-Version: 4.6.0
+Vcs-Git: https://salsa.debian.org/java-team/libsambox-java.git
+Vcs-Browser: https://salsa.debian.org/java-team/libsambox-java
+Homepage: https://github.com/torakiki/sambox
+
+Package: libsambox-java
+Architecture: all
+Depends:
+ ${maven:Depends},
+ ${misc:Depends}
+Suggests:
+ ${maven:OptionalDepends}
+Description: SAMBox PDF processor
+ SAMBox is an Apache PDFBox 2.0.0 fork intended to be used as PDF processor for
+ Sejda and PDFsam related projects. The main differences between PDFBox and
+ SAMBox are:
+  * Lazy loading/parsing of PDF objects
+  * Multiple I/O implementations to read from
+  * Minimized garbage collection through the use of a pool of
+    java.lang.Stringbuilder
+  * PDF streams are read directly from the underlying source through the
+    concept of bounded views
+  * Removal of unused PDFBox features like preflight validator, fdf and digital
+    signature
+  * Documents can be saved using objects stream to store PDF objects
